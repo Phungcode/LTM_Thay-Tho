@@ -36,8 +36,12 @@ public class Tuan6_sever extends Thread {
 			while(true) {
 					String nhanchuoi = buffRead.readLine();
 					System.out.print(nhanchuoi);
+					if (nhanchuoi.equals("1"))
+					{
+						String guitra = "one";
+					}
+					//String guitra = nhanchuoi;
 					
-					String guitra = nhanchuoi;
 					buffWrite.write(guitra + "/n");
 					buffWrite.flush();
 					if (guitra.equals("10"))break;
