@@ -39,7 +39,7 @@ public class Client_Tuan6 {
 				String nhanchuoi = buffRead.readLine();
 				System.out.print("Server" +nhanchuoi);
 				
-				if(guitra.equals("Bai")) break;
+				if(guitra.equals("10")) break;
 			}
 		SK.close();
 		}
