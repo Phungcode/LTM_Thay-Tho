@@ -50,6 +50,15 @@ public class Tuan6_sever extends Thread {
 					String chuoiGui= "for";
 					}else if(chuoiNhan.equals("5")) {
 					String chuoiGui= "five";
+					}else if(chuoiNhan.equals("6")) {
+					String chuoiGui= "Six";
+					}else if(chuoiNhan.equals("7")) {
+					String chuoiGui= "Seven";
+					}else if(chuoiNhan.equals("8")) {
+					String chuoiGui= "Eight";
+					}else if(chuoiNhan.equals("9")) {
+					String chuoiGui= "Nine";
+					}
 
 					buffWrite.write(guitra + "/n");
 					buffWrite.flush();
