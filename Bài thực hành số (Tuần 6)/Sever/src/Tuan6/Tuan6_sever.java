@@ -36,49 +36,25 @@ public class Tuan6_sever extends Thread {
 			while(true){
 				String chuoiNhan=buffR.readLine();
 				System.out.print(chuoiNhan);
-				
-				if(chuoiNhan.equals("0\n")) {
-					String chuoiGui= "zero";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("1\n")) {
+
+				if (nhanchuoi.equals("0"))
+					{
+						String guitra = "zero";
+					}else if(chuoiNhan.equals("1")) {
 					String chuoiGui= "one";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("2\n")) {
+					}else if(chuoiNhan.equals("2")) {
 					String chuoiGui= "two";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("3\n")) {
+					}else if(chuoiNhan.equals("")) {
 					String chuoiGui= "three";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("4\n")) {
-					String chuoiGui= "four";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("5\n")) {
+					}else if(chuoiNhan.equals("4")) {
+					String chuoiGui= "for";
+					}else if(chuoiNhan.equals("5")) {
 					String chuoiGui= "five";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("6\n")) {
-					String chuoiGui= "six";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("7\n")) {
-					String chuoiGui= "seven";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("8\n")) {
-					String chuoiGui= "eight";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("9\n")) {
-					String chuoiGui= "night";
-					buffW.write(chuoiGui+"\n");
-					buffW.flush();
-				}else if(chuoiNhan.equals("10\n")) {
-					break;
+
+					buffWrite.write(guitra + "/n");
+					buffWrite.flush();
+					if (guitra.equals("10"))break;
+				
 				}
 				
 			}
