@@ -15,7 +15,7 @@ public class Server_main {
 		while (true) {
 			Socket s = SocketServer.accept();
 			id++;
-			Tuan6_sever Task =new Tuan6_sever(s,id);
+			LuongXL Task =new LuongXL(s,id);
 			Task.start();
 		}
 	}
