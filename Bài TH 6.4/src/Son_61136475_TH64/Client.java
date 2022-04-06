@@ -1,6 +1,6 @@
 package Son_61136475_TH64;
 
-public class Client {
+
 	import java.io.BufferedReader;
 	import java.io.BufferedWriter;
 	import java.io.IOException;
@@ -11,7 +11,7 @@ public class Client {
 	import java.net.Socket;
 	import java.util.Scanner;
 
-	public class Client_Tuan6 {
+	public class Client {
 
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
@@ -53,4 +53,4 @@ public class Client {
 
 	}
 
-}
+
