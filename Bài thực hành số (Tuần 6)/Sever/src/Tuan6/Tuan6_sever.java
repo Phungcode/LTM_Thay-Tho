@@ -33,20 +33,41 @@ public class Tuan6_sever extends Thread {
 			InputStreamReader inRead = new InputStreamReader(in);
 			BufferedReader buffRead = new BufferedReader(inRead);
 			
-			while(true) {
-					String nhanchuoi = buffRead.readLine();
-					System.out.print(nhanchuoi);
-					if (nhanchuoi.equals("1"))
+			while(true){
+				String chuoiNhan=buffR.readLine();
+				System.out.print(chuoiNhan);
+
+				if (nhanchuoi.equals("0"))
 					{
-						String guitra = "one";
+						String guitra = "zero";
+					}else if(chuoiNhan.equals("1")) {
+					String chuoiGui= "one";
+					}else if(chuoiNhan.equals("2")) {
+					String chuoiGui= "two";
+					}else if(chuoiNhan.equals("")) {
+					String chuoiGui= "three";
+					}else if(chuoiNhan.equals("4")) {
+					String chuoiGui= "for";
+					}else if(chuoiNhan.equals("5")) {
+					String chuoiGui= "five";
+					}else if(chuoiNhan.equals("6")) {
+					String chuoiGui= "Six";
+					}else if(chuoiNhan.equals("7")) {
+					String chuoiGui= "Seven";
+					}else if(chuoiNhan.equals("8")) {
+					String chuoiGui= "Eight";
+					}else if(chuoiNhan.equals("9")) {
+					String chuoiGui= "Nine";
 					}
-					//String guitra = nhanchuoi;
-					
+
 					buffWrite.write(guitra + "/n");
 					buffWrite.flush();
 					if (guitra.equals("10"))break;
+				
 				}
-			SocketClient.close();
+				
+			}
+			socketClient.close();
 			}	
 		catch(Exception e) {
 				System.err.println(e.getMessage());
