@@ -20,27 +20,40 @@ package Son_61136475_TH64;
 				SK = new Socket ("localhost",2001);
 				System.out.print("Đã được kết nối....... \n");
 				
-				InputStream in = SK.getInputStream();
-				InputStreamReader inRead = new InputStreamReader(in);
-				BufferedReader buffRead = new BufferedReader(inRead);
+//				InputStream in = SK.getInputStream();
+//				InputStreamReader inRead = new InputStreamReader(in);
+//				BufferedReader buffRead = new BufferedReader(inRead);
+//				
+//				OutputStream osToClient = SK.getOutputStream();
+//				OutputStreamWriter write2client = new OutputStreamWriter(osToClient);
+//				BufferedWriter buffWrite = new BufferedWriter(write2client);
+				
+//				Scanner  banphim = new Scanner(System.in);
+//			
+//				while(true) {
+//					System.out.print("\n Client: ");
+//					String guitra = banphim.nextLine();
+//					
+//					buffWrite.write(guitra +"\n");
+//					buffWrite.flush();
+//					
+//					String nhanchuoi = buffRead.readLine();
+//					System.out.print("Server" +nhanchuoi);
+//					
+//					if(guitra.equals("10")) break;
+//				}
+				
+				void Guifile(String tenfile)throws IOException{
+				BufferedReader buffRead = new BufferedReader(fr);
 				
 				OutputStream osToClient = SK.getOutputStream();
 				OutputStreamWriter write2client = new OutputStreamWriter(osToClient);
 				BufferedWriter buffWrite = new BufferedWriter(write2client);
 				
-				Scanner  banphim = new Scanner(System.in);
-			
-				while(true) {
-					System.out.print("\n Client: ");
-					String guitra = banphim.nextLine();
+				String line;
+				while ((line=buffWrife.readLine())!= null) {
 					
-					buffWrite.write(guitra +"\n");
-					buffWrite.flush();
-					
-					String nhanchuoi = buffRead.readLine();
-					System.out.print("Server" +nhanchuoi);
-					
-					if(guitra.equals("10")) break;
+				}
 				}
 			SK.close();
 			}
@@ -53,4 +66,4 @@ package Son_61136475_TH64;
 
 	}
 
-
+}
